@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#">NextQuest</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active text-light" aria-current="page" href="#">Outros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" href="#">Tailwind</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <section id="carrossel">
+          <div class="container p-5 ">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="imgs/mine.webp" class="d-block w-100 rounded" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imgs/rdr2.avif" class="d-block w-100 rounded" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="imgs/zelda.webp" class="d-block w-100 rounded" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div>
+      </section>
+
+      <div class="container">
+          <div class="card-group ">
+            <div class="card bg-dark">
+              <img src="imgs/rdr2.avif" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-light">Read Dead Redemption 2</h5>
+                <p class="card-text text-light">Explore o Velho Oeste em Red Dead Redemption 2, um épico de ação com narrativa profunda, mundo aberto vasto e mecânicas realistas que colocam o jogador na pele de um fora da lei.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <button type="button" class="btn btn-outline-success">Obter</button>
+              </div>
+            </div>
+            <div class="card bg-dark">
+              <img src="imgs/zelda.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-light">The Legend of Zelda: Breath of the Wild</h5>
+                <p class="card-text text-light">Em Breath of the Wild, Link desperta em um vasto mundo aberto cheio de mistérios, batalhas épicas e liberdade de exploração, revolucionando a franquia Zelda com inovação e beleza.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <button type="button" class="btn btn-outline-success">Obter</button>
+              </div>
+            </div>
+            <div class="card bg-dark">
+              <img src="imgs/mine.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title text-light">Minecraft</h5>
+                <p class="card-text text-light">Minecraft é um jogo de construção e sobrevivência onde os jogadores exploram, criam e moldam mundos infinitos de blocos. Seja sozinho ou em grupo, a criatividade é o único limite.</p>
+                <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                <button type="button" class="btn btn-outline-success">Obter</button>
+              </div>
+            </div>
+          </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
