@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>NextQuest</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
   <link rel="stylesheet" href="css/reset.css">
@@ -13,8 +13,8 @@
 
 <body>
   <nav class="navbar navbar-expand-lg bg-dark">
-    <div class="container">
-      <a class="navbar-brand text-light" href="#">NextQuest</a>
+    <div class="container px-5">
+      <a class="navbar-brand text-light" href="#">Next<span class="text-primary">Quest</span></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active text-light" aria-current="page" href="#">Outros</a>
+            <a class="nav-link active text-light" aria-current="page" href="outros-components.html">Outros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-light" href="#">Tailwind</a>
@@ -32,9 +32,11 @@
     </div>
   </nav>
 
+  
   <section id="carrossel">
     <div class="container p-5 ">
-      <div id="carouselExampleCaptions" class="carousel slide">
+      <h1>Jogos em Destaque <span class="badge text-bg-primary">Melhores</span></h1>
+      <div id="carouselExampleCaptions" class="carousel slide mt-4">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
             aria-current="true" aria-label="Slide 1"></button>
@@ -80,101 +82,96 @@
     </div>
   </section>
 
-  <div class="container">
-    <div class="card-group gap-2 p-5">
-      <div class="card bg-dark">
-        <img src="imgs/rdr2.avif" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-light">Read Dead Redemption 2</h5>
-          <p class="card-text text-light">Explore o Velho Oeste em Red Dead Redemption 2, um épico de ação com narrativa
-            profunda, mundo aberto vasto e mecânicas realistas que colocam o jogador na pele de um fora da lei.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Obter Jogo
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content bg-dark text-white">
-                <div class="modal-header bg-dark text-white">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer bg-dark text-white">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card bg-dark">
-        <img src="imgs/zelda.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-light">The Legend of Zelda: Breath of the Wild</h5>
-          <p class="card-text text-light">Em Breath of the Wild, Link desperta em um vasto mundo aberto cheio de
-            mistérios, batalhas épicas e liberdade de exploração, revolucionando a franquia Zelda com inovação e beleza.
-          </p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Obter Jogo
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content bg-dark text-white">
-                <div class="modal-header bg-dark text-white">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer bg-dark text-white">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <button type="button" class="btn btn-outline-success">Save changes</button>
+  <section id="jogos">
+    <div class="container">
+      <h2 class="ms-5">Outros Jogos</h2>
+      <div class="card-group gap-2 px-5 mt-4">
+        <div class="card bg-dark">
+          <img src="imgs/terraria.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-light">Terraria</h5>
+            <p class="card-text text-light">Explore, construa e lute em Terraria, um mundo 2D repleto de aventuras, inimigos e segredos. Cave, colete recursos e enfrente chefes em um dos jogos de sobrevivência mais criativos já feitos.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Obter Jogo
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark text-white">
+                  <div class="modal-header bg-dark text-white">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Obter Jogo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Pronto para explorar, construir e enfrentar chefes em <strong>Terraria</strong>?
+                  </div>
+                  <div class="modal-footer bg-dark text-white">
+                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Adicionar à
+                      Biblioteca</button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="card bg-dark">
-        <img src="imgs/mine.webp" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title text-light">Minecraft</h5>
-          <p class="card-text text-light">Minecraft é um jogo de construção e sobrevivência onde os jogadores exploram,
-            criam e moldam mundos infinitos de blocos. Seja sozinho ou em grupo, a criatividade é o único limite.</p>
-          <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Obter Jogo
-          </button>
-
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content bg-dark text-white">
-                <div class="modal-header bg-dark text-white">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="card bg-dark">
+          <img src="imgs/dark_3.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-light">Dark Souls III</h5>
+            <p class="card-text text-light">Mergulhe nas sombras de Dark Souls III, um RPG sombrio e desafiador com combates precisos, cenários épicos e uma atmosfera única que recompensa a perseverança e a descoberta.
+            </p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+              Obter Jogo
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark text-white">
+                  <div class="modal-header bg-dark text-white">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Obter Jogo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Está preparado para encarar os desafios sombrios de <strong>Dark Souls III</strong>?
+                  </div>
+                  <div class="modal-footer bg-dark text-white">
+                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Adicionar à
+                      Biblioteca</button>
+                  </div>
                 </div>
-                <div class="modal-body">
-                  ...
-                </div>
-                <div class="modal-footer bg-dark text-white">
-                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card bg-dark">
+          <img src="imgs/sv.avif" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-light">Stardew Valley</h5>
+            <p class="card-text text-light">Comece uma nova vida em Stardew Valley, um simulador de fazenda encantador com cultivo, relacionamentos, pesca, mineração e muita liberdade para viver no seu próprio ritmo.</p>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+              Obter Jogo
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content bg-dark text-white">
+                  <div class="modal-header bg-dark text-white">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Obter Jogo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    Quer começar uma nova vida no campo com <strong>Stardew Valley</strong>?
+                  </div>
+                  <div class="modal-footer bg-dark text-white">
+                    <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Adicionar à
+                      Biblioteca</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -182,11 +179,12 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
     crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
