@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +8,62 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/color.css">
 </head>
+
 <body>
-   <nav class="w-100% bg-gray-800">
-    <a href="index.html">Next<span style="color: #0d6efd;">Quest</span></a>
-    <a href="index.html">Home</a>
-    <a href="outros-components.html">Outros</a>
-   </nav> 
+    <div id="cabecalho" class="">
+        <nav class="h-14 max-w-7xl mx-auto flex items-center gap-6 text-white ml-6">
+            <a id="logo" href="index.html" class="text-lg text-white">
+                Next<span style="color: #0d6efd;">Quest</span>
+            </a>
+            <a href="outros-components.html" class="text-white">Outros</a>
+            <a href="index.html" class="text-white">Home</a>
+        </nav>
+    </div>
+
+    <main id="content" class="w-full h-[80vh] flex justify-center items-center">
+        <!-- Cards -->
+        <div class="flex gap-4" id="cards">
+            
+            <div class="w-[288px] h-[554px] flex flex-col items-center gap-2 rounded" id="card">
+                <img class="rounded w-[288px] h-[288px]" src="imgs/terraria.jpg" alt="">
+                <div class="w-full h-full flex flex-col justify-between gap-3" id="c-content">
+                    <div class="flex-col justify-start" id="c-textos">
+                        <h2 class="text-white text-[20px] mb-[8px] font-medium">Terraria</h2>
+                        <p class="text-[16px] mb-[16px]">Explore, construa e lute em Terraria, um mundo 2D cheio de aventuras, inimigos e segredos. Cave, colete e enfrente chefes.</p>
+                    </div>
+                    <a class="w-[100%] h-[40px] rounded text-white flex justify-center items-center gap-1.5" href="#">Obter Jogo</a>
+                </div>
+            </div>
+            
+            <div class="w-[288px] h-[554px] flex flex-col items-center gap-2 rounded" id="card">
+                <img class="rounded w-[288px] h-[288px]" src="imgs/dark_3.jpg" alt="">
+                <div class="w-full h-full flex flex-col justify-between gap-3" id="c-content">
+                    <div class="flex-col justify-start" id="c-textos">
+                        <h2 class="text-white text-[20px] mb-[8px] font-medium">Dark Souls III</h2>
+                        <p class="text-[16px] mb-[16px]">Mergulhe em Dark Souls III, um RPG desafiador com combates precisos, cenários épicos e uma atmosfera única que recompensa a perseverança.</p>
+                    </div>
+                    <a class="w-[100%] h-[40px] rounded text-white flex justify-center items-center gap-1.5" href="#">Obter Jogo</a>
+                </div>
+            </div>
+            
+            <div class="w-[288px] h-[554px] flex flex-col items-center gap-2 rounded" id="card">
+                <img class="rounded w-[288px] h-[288px]" src="imgs/sv.avif" alt="">
+                <div class="w-full h-full flex flex-col justify-between gap-3" id="c-content">
+                    <div class="flex-col justify-start" id="c-textos">
+                        <h2 class="text-white text-[20px] mb-[8px] font-medium">Stardew Valley</h2>
+                        <p class="text-[16px] mb-[16px]">Comece em Stardew Valley, um simulador de fazenda com cultivo, relacionamentos, pesca e mineração.</p>
+                    </div>
+                    <a class="w-[100%] h-[40px] rounded text-white flex justify-center items-center gap-1.5" href="#">Obter Jogo</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>Next<span style="color: #0d6efd;">Quest</span> © Todos os direitos reservados.</p>
+    </footer>
+
 </body>
+
 </html>

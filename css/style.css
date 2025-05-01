@@ -1,0 +1,54 @@
+#cabecalho {
+    background-color: #212529;
+}
+
+#cabecalho nav {
+    margin-left: 8.7rem;
+}
+
+#cabecalho a {
+    margin-top: 3px;
+}
+
+#logo {
+    font-size: 20px;
+}
+
+#card {
+    background: #212529;
+}
+
+#card #c-content {
+    padding: 16px;
+}
+
+#card #c-content #c-textos h2 {
+    margin-bottom: 8px;
+}
+
+#card #c-content #c-textos p {
+    margin-bottom: 16px;
+    color: #dbdbdb;
+}
+
+#card #c-content a {
+    background: #212529;
+    color: #198754;
+    border: 2px solid #198754;
+}
+
+#card #c-content a:hover {
+    background: #198754;
+    color: #dbdbdb;
+}
+
+
+
+.footer p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    margin-top: 50px;
+}
